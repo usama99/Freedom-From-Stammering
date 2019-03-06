@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fcfdff</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background">#FFFFFF</color>
+    <color name="background2">#E4505050</color>
+    <color name="gif_front_drawablee">#e6f3ff</color>
+    <color name="overlay">#46505050</color>
+    <color name="fb">#3b5998</color>
+    <color name="google">#0CA85B</color>
+    <color name="main_page">#ECF1FA</color>
+    <color name="main_page_button">#5181B2</color>
+    <color name="main_page_item">#F1F8FF</color>
+</resources>
