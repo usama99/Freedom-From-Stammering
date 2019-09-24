@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button signup, alreadyacount;
+    Button signup, alreadyacount, guest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_main);
 
+        guest = findViewById(R.id.guest);
         signup = findViewById(R.id.signUp);
         alreadyacount = findViewById(R.id.alreayAccount);
 
@@ -43,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
 //                alreadyacount.startAnimation(animation);
                 Intent intent = new Intent(MainActivity.this, logedin.class);
                 startActivity(intent);
+            }
+        });
+        guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentGuest = new Intent(MainActivity.this, SpeechTrainingGuest.class);
+                startActivity(intentGuest);
             }
         });
 

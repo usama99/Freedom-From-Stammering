@@ -33,7 +33,7 @@ public class StarterActivity extends AppCompatActivity {
             public void run() {
                 Intent intent = new Intent(StarterActivity.this, MainActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.translate, R.anim.alpha);
+//                overridePendingTransition(R.anim.translate, R.anim.alpha);
                 finish();
             }
         }, TIME_OUT);

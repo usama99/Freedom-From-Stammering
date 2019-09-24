@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/main_page"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".WhatsappGroups">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/backtowhatsappicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
+                android:contentDescription="TODO"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:fontFamily="monospace"
+                android:text="@string/whatsapp_groups"
+                android:textColor="@color/main_page_button"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/stuttering_as_tms_mbs"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="45dp"
+            android:src="@drawable/whatsapp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/stop_holding_back"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/whatsapp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/stammering_management"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/whatsapp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/shb_speech_practice"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:src="@drawable/whatsapp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/freedom_from_stammering"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/whatsapp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

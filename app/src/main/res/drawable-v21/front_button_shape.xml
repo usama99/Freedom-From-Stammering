@@ -12,7 +12,7 @@
         android:top="1dp"
         android:bottom="1dp"/>
 
-    <solid android:color="#505050"/>
+    <solid android:color="@color/main_page_button"/>
 
         </shape>
     </item>

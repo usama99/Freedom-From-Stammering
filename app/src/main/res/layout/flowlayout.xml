@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/main_page_items"
+    android:elevation="3dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vc"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:src="@drawable/v"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_page_button"
+                android:gravity="left"
+                android:textStyle="normal"
+                android:textSize="22sp"
+                android:fontFamily="monospace"
+                android:text="@string/a"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_page_button"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:fontFamily="monospace"
+                android:text="@string/vowel"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginStart="1dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/speakout"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/speech"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

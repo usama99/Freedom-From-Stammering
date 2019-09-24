@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.usama.freefromstammering">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,29 +14,79 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SpeechTrainingGuest"></activity>
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".ArticleTech7" />
+        <activity android:name=".IntegrativeApproach" />
+        <activity android:name=".ArticleTech6" />
+        <activity android:name=".StutteringModification" />
+        <activity android:name=".ArticleTech5" />
+        <activity android:name=".SpeechFluency" />
+        <activity android:name=".ArticleTech4" />
+        <activity android:name=".CostalBreathing" />
+        <activity android:name=".ArticleTech3" />
+        <activity android:name=".McGuireProgram" />
+        <activity android:name=".ArtcileTech2" />
+        <activity android:name=".Tms" />
+        <activity android:name=".ArtcileTech1" />
+        <activity android:name=".ValsalvaManeuver" />
+        <activity android:name=".Techniques" />
+        <activity android:name=".SpeechTraining" />
+        <activity android:name=".YouTubeVideos" />
+        <activity android:name=".MeditationArctileLinks" />
+        <activity android:name=".MeditationArticles" />
+        <activity android:name=".Meditation" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Help" />
+        <activity android:name=".Settings" />
+        <activity android:name=".WhatsappGroups" />
+        <activity android:name=".TwitterLinks" />
+        <activity android:name=".TwitterGroups" />
+        <activity android:name=".FacebookLinks" />
+        <activity android:name=".FacebookPagesAndGroups" />
+        <activity android:name=".PinterestDetails" />
+        <activity android:name=".DetailSiteCommunity" />
+        <activity android:name=".WebCommunity" />
+        <activity android:name=".VowelsConsonants" />
+        <activity android:name=".DetailsFlowSpeech" />
+        <activity android:name=".SpeechFlow" />
+        <activity android:name=".ReadingSite" />
+        <activity android:name=".ReadingStories" />
+        <activity android:name=".Article_site" />
+        <activity android:name=".Connections" />
+        <activity android:name=".Articles" />
+        <activity android:name=".Exercises" />
         <activity android:name=".StarterActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Mainmenu">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".signup" />
-        <activity android:name=".logedin" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".logedin"
             android:finishOnTaskLaunch="true">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

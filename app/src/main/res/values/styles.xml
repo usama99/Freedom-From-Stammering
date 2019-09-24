@@ -4,23 +4,31 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/background2</item>
+        <item name="colorPrimaryDark">@color/main_page_button</item>
+        <item name="colorAccent">@color/main_page_button</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
     <style name="HintText" parent="TextAppearance.Design.Hint">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/overlay</item>
+        <item name="android:textColor">@color/main_page_button</item>
     </style>
 
     <style name="CounterText" parent="TextAppearance.Design.Counter">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/background2</item>
+        <item name="android:textColor">@color/main_page_button</item>
     </style>
 
     <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/background2</item>
+        <item name="android:textColor">@color/main_page_button</item>
     </style>
 
 </resources>

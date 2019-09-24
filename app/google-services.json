@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208524790130",
+    "firebase_url": "https://freedom-from-stammering.firebaseio.com",
+    "project_id": "freedom-from-stammering",
+    "storage_bucket": "freedom-from-stammering.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208524790130:android:fe029c3515798eb9",
+        "android_client_info": {
+          "package_name": "com.example.usama.freefromstammering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208524790130-b1qnmv7vmubdj13cdmfpkegcp7pngikr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.usama.freefromstammering",
+            "certificate_hash": "9fb69856465cf10e2622527bd35b12cd66229855"
+          }
+        },
+        {
+          "client_id": "208524790130-8vl5m4mjc64gkbkimrsdv2dvjqp0j84t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH1hIiymeNx1hNLY4RhWVp7bFTQsUcfVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208524790130-8vl5m4mjc64gkbkimrsdv2dvjqp0j84t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

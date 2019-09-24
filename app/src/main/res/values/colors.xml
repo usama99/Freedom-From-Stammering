@@ -12,4 +12,5 @@
     <color name="main_page">#ECF1FA</color>
     <color name="main_page_button">#5181B2</color>
     <color name="main_page_item">#F1F8FF</color>
+    <color name="header">#D2DFFD</color>
 </resources>

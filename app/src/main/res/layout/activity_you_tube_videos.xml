@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page_item"
+    android:orientation="vertical"
+    tools:context=".YouTubeVideos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/backtoyoutubevideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
+                android:contentDescription="TODO"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:fontFamily="monospace"
+                android:text="@string/video"
+                android:textColor="@color/main_page_button"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/wim_hof_breathing"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/ic_video_library_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/heal_your_body_joe"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_video_library_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/guided"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_video_library_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/dr_joe_dispenza"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="65dp"
+            android:src="@drawable/ic_video_library_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/video5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:background="@drawable/main_page_items"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_page_button"
+            android:gravity="center_vertical"
+            android:textStyle="normal"
+            android:textSize="22sp"
+            android:fontFamily="monospace"
+            android:text="@string/_5_happiness_hacks"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
+            android:src="@drawable/ic_video_library_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</LinearLayout>

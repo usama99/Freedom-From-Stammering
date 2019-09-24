@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:backgroundTint="@color/background"
+    android:background="@color/main_page"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo" />
@@ -24,18 +24,19 @@
         android:textAllCaps="true"
         android:text="@string/it_s_time_to_practice"
         android:textStyle="normal"
+        android:textColor="@color/main_page_button"
         android:fontFamily="monospace"
         android:textAppearance="?android:textAppearanceLarge"/>
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gif"
-        android:background="@drawable/background_front_page"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:background="@drawable/main_image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo_gif"
+        android:src="@drawable/main"
         tools:srcCompat="@tools:sample/avatars"/>
 
     <Button
@@ -44,10 +45,11 @@
         android:layout_height="50dp"
         android:text="@string/sign_up"
         android:textStyle="normal"
-        android:textColor="@color/background"
+        android:elevation="3dp"
+        android:textColor="@color/main_page"
         android:fontFamily="monospace"
         android:textAppearance="?android:textAppearanceSmall"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/front_button_shape"
         android:layout_gravity="center_horizontal"/>
 
@@ -57,7 +59,20 @@
         android:layout_height="50dp"
         android:text="@string/i_already_have_an_acciunt"
         android:textStyle="normal"
-        android:textColor="@color/background2"
+        android:textColor="@color/main_page"
+        android:fontFamily="monospace"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/front_button_shape"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/guest"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="@string/login_as_guest"
+        android:textStyle="normal"
+        android:textColor="@color/main_page_button"
         android:fontFamily="monospace"
         android:textAppearance="?android:textAppearanceSmall"
         android:layout_marginTop="20dp"

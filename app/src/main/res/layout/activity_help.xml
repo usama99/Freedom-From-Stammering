@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_page"
+    tools:context=".Help">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripples"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/backtohelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:fontFamily="monospace"
+                android:text="@string/help_feedback"
+                android:textColor="@color/main_page_button"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="30dp"-->
+        <!--android:layout_marginEnd="30dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--app:counterEnabled="true"-->
+        <!--app:counterMaxLength="150"-->
+        <!--android:textColorHint="@color/main_page_button"-->
+        <!--app:counterOverflowTextAppearance="@style/CounterOverFlow"-->
+        <!--app:counterTextAppearance="@style/CounterText"-->
+        <!--app:hintTextAppearance="@style/HintText">-->
+
+        <EditText
+            android:id="@+id/issue"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:inputType="textEmailAddress"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/main_page_button"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:hint="@string/issue" />
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:text="@string/send"
+        android:elevation="3dp"
+        android:textStyle="normal"
+        android:textColor="@color/background"
+        android:fontFamily="monospace"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/front_button_shape"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

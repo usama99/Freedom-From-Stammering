@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page"
+    tools:context=".SpeechFlow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/backtoflow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_blue_24dp"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:fontFamily="monospace"
+                android:text="@string/speech_flow"
+                android:textColor="@color/main_page_button"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="255dp"
+            android:elevation="5dp"
+            android:layout_marginTop="130dp"
+            android:orientation="vertical"
+            android:layout_gravity="center|center_horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif"
+                android:background="@color/main_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/flow"
+                tools:srcCompat="@tools:sample/avatars"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/detailsOfFlow"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="monospace"
+            android:background="@drawable/rippleits"
+            android:layout_marginStart="15dp"
+            android:text="@string/clicl_here_for_more_deatails"
+            android:textColor="@color/main_page_button"
+            android:textSize="20sp"
+            android:elevation="10dp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+</LinearLayout>

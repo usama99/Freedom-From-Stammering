@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_page"
+    tools:context=".Settings"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@color/header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/backmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"
+                android:contentDescription="TODO" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="monospace"
+                android:text="@string/settings"
+                android:textColor="@color/main_page_button"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutfromapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rippleits"
+                android:src="@drawable/logout" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_help_outline_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center"
+            android:text="@string/help"
+            android:textColor="@color/main_page_button"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rateapp"
+        android:elevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center"
+            android:text="@string/rateit"
+            android:textColor="@color/main_page_button"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shareapp"
+        android:elevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center"
+            android:text="@string/shareapp"
+            android:textColor="@color/main_page_button"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutus"
+        android:elevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/about"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="monospace"
+            android:layout_gravity="center"
+            android:text="@string/about_us"
+            android:textColor="@color/main_page_button"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/logoutfromapp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="280dp"-->
+        <!--android:background="@color/header">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fontFamily="monospace"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:gravity="center|center_horizontal"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:text="@string/log_out"-->
+            <!--android:textColor="@color/main_page_button"-->
+            <!--android:textSize="22sp"-->
+            <!--android:textStyle="normal" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>
