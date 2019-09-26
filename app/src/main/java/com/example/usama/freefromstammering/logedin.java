@@ -68,7 +68,6 @@ public class logedin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 loginUser();
-
             }
         });
 
