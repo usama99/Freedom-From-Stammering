@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@color/main_page"
     android:layout_height="match_parent"
-    tools:context=".SpeechTrainingGuest">
+    tools:context="android.huts.usama.freefromstammering.Authentication.SpeechTrainingGuest">
 
     <LinearLayout
         android:layout_width="match_parent"

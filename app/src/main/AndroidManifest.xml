@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.usama.freefromstammering">
+    package="android.huts.usama.freefromstammering">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,56 +14,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SpeechTrainingGuest"></activity>
-        <activity android:name=".ForgetPassword" />
-        <activity android:name=".ArticleTech7" />
-        <activity android:name=".IntegrativeApproach" />
-        <activity android:name=".ArticleTech6" />
-        <activity android:name=".StutteringModification" />
-        <activity android:name=".ArticleTech5" />
-        <activity android:name=".SpeechFluency" />
-        <activity android:name=".ArticleTech4" />
-        <activity android:name=".CostalBreathing" />
-        <activity android:name=".ArticleTech3" />
-        <activity android:name=".McGuireProgram" />
-        <activity android:name=".ArtcileTech2" />
-        <activity android:name=".Tms" />
-        <activity android:name=".ArtcileTech1" />
-        <activity android:name=".ValsalvaManeuver" />
-        <activity android:name=".Techniques" />
-        <activity android:name=".SpeechTraining" />
-        <activity android:name=".YouTubeVideos" />
-        <activity android:name=".MeditationArctileLinks" />
-        <activity android:name=".MeditationArticles" />
-        <activity android:name=".Meditation" />
-        <activity android:name=".AboutUs" />
-        <activity android:name=".Help" />
-        <activity android:name=".Settings" />
-        <activity android:name=".WhatsappGroups" />
-        <activity android:name=".TwitterLinks" />
-        <activity android:name=".TwitterGroups" />
-        <activity android:name=".FacebookLinks" />
-        <activity android:name=".FacebookPagesAndGroups" />
-        <activity android:name=".PinterestDetails" />
-        <activity android:name=".DetailSiteCommunity" />
-        <activity android:name=".WebCommunity" />
-        <activity android:name=".VowelsConsonants" />
-        <activity android:name=".DetailsFlowSpeech" />
-        <activity android:name=".SpeechFlow" />
-        <activity android:name=".ReadingSite" />
-        <activity android:name=".ReadingStories" />
-        <activity android:name=".Article_site" />
-        <activity android:name=".Connections" />
-        <activity android:name=".Articles" />
-        <activity android:name=".Exercises" />
-        <activity android:name=".StarterActivity">
+        <activity android:name="android.huts.usama.freefromstammering.Authentication.SpeechTrainingGuest"></activity>
+        <activity android:name="android.huts.usama.freefromstammering.Authentication.ForgetPassword" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Integrative.ArticleTech7" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Integrative.IntegrativeApproach" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.SpeechModification.ArticleTech6" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.SpeechModification.StutteringModification" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.FluencyShaping.ArticleTech5" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.FluencyShaping.SpeechFluency" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.McGuire.ArticleTech4" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Costal.CostalBreathing" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Costal.ArticleTech3" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.McGuire.McGuireProgram" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.TMSs.ArtcileTech2" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.TMSs.Tms" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Valsalva.ArtcileTech1" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Valsalva.ValsalvaManeuver" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.SevenTechniques.Techniques" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.SpeechTrainingSection.SpeechTraining" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Meditations.YouTubeVideos" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Meditations.MeditationArctileLinks" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Meditations.MeditationArticles" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Meditations.Meditation" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Setting.AboutUs" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Setting.Help" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Setting.Settings" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.WhatsappGroups" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.TwitterLinks" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.TwitterGroups" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.FacebookLinks" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.FacebookPagesAndGroups" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Fab.PinterestDetails" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.DetailSiteCommunity" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.WebCommunity" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.VowelsAndConsonents.VowelsConsonants" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.SpeechFlows.DetailsFlowSpeech" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.SpeechFlows.SpeechFlow" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.Readings.ReadingSite" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.Readings.ReadingStories" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.ArticlesSection.Article_site" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Connection.Connections" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.ArticlesSection.Articles" />
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.ExerciseSection.Exercises" />
+        <activity android:name="android.huts.usama.freefromstammering.Authentication.StarterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Mainmenu">
+        <activity android:name="android.huts.usama.freefromstammering.MainMenue.Mainmenu">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -72,9 +72,9 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".signup" />
+        <activity android:name="android.huts.usama.freefromstammering.Authentication.signup" />
         <activity
-            android:name=".logedin"
+            android:name="android.huts.usama.freefromstammering.Authentication.logedin"
             android:finishOnTaskLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,7 +82,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="android.huts.usama.freefromstammering.Authentication.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
