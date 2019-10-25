@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="2dp"
     android:background="@color/main_page_button"
     android:orientation="vertical"
     tools:context=".Article_site">
@@ -21,11 +20,11 @@
             android:layout_margin="15dp">
 
             <ImageView
+                android:background="@drawable/rippleit"
                 android:id="@+id/backfromsite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/sky_24dp"
-                android:contentDescription="TODO"
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
     </LinearLayout>

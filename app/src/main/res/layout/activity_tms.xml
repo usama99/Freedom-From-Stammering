@@ -9,25 +9,29 @@
     tools:context=".Tms">
 
     <LinearLayout
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp">
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/backtotechnique2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO"
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_weight="1.7"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="20dp">
@@ -35,19 +39,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:layout_gravity="center"
-                android:layout_marginEnd="40dp"
+                android:fontFamily="sans-serif"
                 android:text="@string/tms"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
-                android:textStyle="normal" />
+                android:textAppearance="?android:textAppearanceMedium"/>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="2"
         android:layout_margin="10dp"
         android:orientation="vertical">
@@ -64,15 +65,14 @@
             android:layout_marginTop="20dp"
             android:orientation="vertical"
             tools:targetApi="lollipop"
+            android:gravity="center"
             tools:ignore="NestedWeights">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="60dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:src="@drawable/article"
-                android:contentDescription="TODO" />
+                android:src="@drawable/article"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,9 +82,8 @@
                 android:lines="1"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:textStyle="normal"
-                android:textSize="22sp"
-                android:fontFamily="monospace"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"
                 android:text="@string/articless"/>
 
         </LinearLayout>
@@ -100,16 +99,15 @@
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginTop="20dp"
+            android:gravity="center"
             android:orientation="vertical"
             tools:targetApi="lollipop">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="100dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/ic_video_library_black_24dp"
-                android:contentDescription="TODO"
+                android:src="@drawable/ic_video_library_blue_24dp"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
@@ -120,9 +118,8 @@
                 android:lines="1"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:textStyle="normal"
-                android:textSize="22sp"
-                android:fontFamily="monospace"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"
                 android:text="@string/videoss"/>
 
         </LinearLayout>

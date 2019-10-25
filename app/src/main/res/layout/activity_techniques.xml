@@ -10,12 +10,14 @@
 
 
     <LinearLayout
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
@@ -24,31 +26,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/arrow"
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif"
                 android:text="@string/_7_techniques"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
-                android:textStyle="normal" />
+                android:textAppearance="?android:textAppearanceMedium"/>
         </LinearLayout>
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_techniques"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

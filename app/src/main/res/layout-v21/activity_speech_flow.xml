@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_page"
@@ -11,10 +12,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="2"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
@@ -22,33 +25,31 @@
                 android:id="@+id/backtoflow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp" />
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif"
                 android:text="@string/speech_flow"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
+                android:textAppearance="?android:textAppearanceMedium"
                 android:textStyle="normal" />
         </LinearLayout>
     </LinearLayout>
 
         <LinearLayout
-            android:layout_width="285dp"
-            android:layout_height="255dp"
-            android:elevation="5dp"
-            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center|center_horizontal">
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal|center">
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gif"
@@ -62,21 +63,30 @@
         </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:id="@+id/detailsOfFlow"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:fontFamily="monospace"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
             android:background="@drawable/rippleits"
             android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:text="@string/clicl_here_for_more_deatails"
             android:textColor="@color/main_page_button"
-            android:textSize="20sp"
-            android:elevation="10dp"
-            android:textStyle="normal"/>
+            android:textAppearance="?android:textAppearanceSmall"/>
     </LinearLayout>
-
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        android:gravity="bottom"
+        ads:adUnitId="@string/banner_speech_flows">
+    </com.google.android.gms.ads.AdView>
 </LinearLayout>

@@ -16,15 +16,15 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/ripples"
+            android:background="@drawable/rippleit"
             android:layout_margin="20dp">
 
             <ImageView
                 android:id="@+id/backtohelp"
+                android:background="@drawable/rippleit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -38,24 +38,10 @@
                 android:fontFamily="monospace"
                 android:text="@string/help_feedback"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
+                android:textAppearance="?android:textAppearanceMedium"
                 android:textStyle="normal" />
         </LinearLayout>
     </LinearLayout>
-
-    <!--<android.support.design.widget.TextInputLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginStart="30dp"-->
-        <!--android:layout_marginEnd="30dp"-->
-        <!--android:layout_marginTop="20dp"-->
-        <!--app:counterEnabled="true"-->
-        <!--app:counterMaxLength="150"-->
-        <!--android:textColorHint="@color/main_page_button"-->
-        <!--app:counterOverflowTextAppearance="@style/CounterOverFlow"-->
-        <!--app:counterTextAppearance="@style/CounterText"-->
-        <!--app:hintTextAppearance="@style/HintText">-->
-
         <EditText
             android:id="@+id/issue"
             android:layout_marginStart="30dp"
@@ -65,8 +51,8 @@
             android:layout_height="wrap_content"
             android:textStyle="normal"
             android:inputType="textEmailAddress"
-            android:fontFamily="monospace"
-            android:textColorHint="@color/main_page_button"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/header_word"
             android:textAppearance="?android:textAppearanceSmall"
             android:hint="@string/issue" />
 
@@ -80,10 +66,9 @@
         android:elevation="3dp"
         android:textStyle="normal"
         android:textColor="@color/background"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:textAppearance="?android:textAppearanceSmall"
         android:layout_marginTop="30dp"
         android:background="@drawable/front_button_shape"
         android:layout_gravity="center_horizontal"/>
-
 </LinearLayout>

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:208524790130:android:fe029c3515798eb9",
         "android_client_info": {
-          "package_name": "com.example.usama.freefromstammering"
+          "package_name": "calm.huts.usama.freefromstammering"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "208524790130-b1qnmv7vmubdj13cdmfpkegcp7pngikr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.usama.freefromstammering",
+            "package_name": "calm.huts.usama.freefromstammering",
             "certificate_hash": "9fb69856465cf10e2622527bd35b12cd66229855"
           }
         },

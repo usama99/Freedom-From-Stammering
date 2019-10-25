@@ -13,4 +13,5 @@
     <color name="main_page_button">#5181B2</color>
     <color name="main_page_item">#F1F8FF</color>
     <color name="header">#D2DFFD</color>
+    <color name="header_word">#8B5082B3</color>
 </resources>

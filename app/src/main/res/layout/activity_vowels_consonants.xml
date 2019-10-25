@@ -11,11 +11,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
+        android:weightSum="2"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
@@ -23,12 +24,12 @@
                 android:id="@+id/backtovowels"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="1.6"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="20dp">
@@ -36,14 +37,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif"
                 android:text="@string/vowels_consonants"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
-                android:textStyle="normal" />
+                android:textAppearance="?android:textAppearanceMedium"/>
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="0.1"
             android:layout_width="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_height="wrap_content"
@@ -60,11 +61,11 @@
 
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_vowels"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

@@ -9,12 +9,14 @@
     tools:context=".WhatsappGroups">
 
     <LinearLayout
+        android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
@@ -23,10 +25,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO"
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
         <LinearLayout
+            android:layout_weight="1.5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
@@ -34,16 +36,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif"
                 android:text="@string/whatsapp_groups"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
-                android:textStyle="normal" />
+                android:textAppearance="?android:textAppearanceMedium"/>
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:weightSum="2"
         android:id="@+id/group1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,28 +53,31 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:padding="20dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/stuttering_as_tms_mbs"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginStart="45dp"
             android:src="@drawable/whatsapp"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:weightSum="2"
         android:id="@+id/group2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,28 +86,31 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:padding="20dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/stop_holding_back"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginStart="55dp"
             android:src="@drawable/whatsapp"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:weightSum="2"
         android:id="@+id/group3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -112,28 +119,31 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:padding="20dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/stammering_management"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginStart="10dp"
             android:src="@drawable/whatsapp"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:weightSum="2"
         android:id="@+id/group4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -142,28 +152,31 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:padding="20dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/shb_speech_practice"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginStart="35dp"
             android:src="@drawable/whatsapp"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:weightSum="2"
         android:id="@+id/group5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -172,23 +185,25 @@
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:padding="20dp"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_weight="1.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/freedom_from_stammering"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginStart="22dp"
             android:src="@drawable/whatsapp"/>
 
     </LinearLayout>

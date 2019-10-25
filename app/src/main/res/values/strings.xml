@@ -18,7 +18,7 @@
     <string name="sample2">Title of it</string>
     <string name="sample3">Description of Article</string>
     <string name="exercise_session">Exercise Session</string>
-    <string name="speech_traning"><b>Speech Training</b>\nTrain Yourself To Gain\nWhat You Want</string>
+    <string name="speech_training"><b>Speech Training</b>\nTrain Yourself To Gain\nWhat You Want</string>
     <string name="vowels_consonents"><b><![CDATA[Vowels & Consonants]]></b>\nPull Your Strings Speak\nOut Grab Your Audience</string>
     <string name="reading"><b>Reading</b>\nShort Stories of Conquers\nMotivation for learners</string>
     <string name="sp_fl"><b>Speech Flow</b>\nGo With Speech Flow Learn\nHow To Articulate Words</string>
@@ -26,8 +26,8 @@
     <string name="time">4 min</string>
     <string name="quick_notes">Quick Notes</string>
     <string name="space" />
-    <string name="read_more">Read more...</string>
-    <string name="stutter1">Stuttering.</string>
+    <string name="read_more"><![CDATA[Read more…]]></string>
+    <string name="stutter1">Stuttering</string>
     <string name="motivations">Motivations</string>
     <string name="speech_flow">Speech Flow</string>
     <string name="clicl_here_for_more_deatails">Click here for more deatails..</string>
@@ -79,7 +79,7 @@
     <string name="tap_on_mic">Let\'s speak to train yourself</string>
     <string name="tech1">Valsalva</string>
     <string name="valsalva_maneuver">Valsalva Maneuver</string>
-    <string name="articless">article</string>
+    <string name="articlesss">article</string>
     <string name="videoss">video</string>
     <string name="tms">TMS</string>
     <string name="mcguire_program">McGuire Program</string>
@@ -89,5 +89,20 @@
     <string name="integrative_approach">Integrative Approach</string>
     <string name="username">Username</string>
     <string name="reset_password">Reset Password</string>
-    <string name="login_as_guest">Login as Guest</string>
+    <string name="login_as_guest">LOGIN AS GUEST</string>
+    <string name="password_8_characters">Password (8+ characters)</string>
+    <string name="mice">mice</string>
+    <string name="password_5_characters">Password (5+ characters)</string>
+    <string name="email_address">Email address</string>
+    <string name="arrow">arrow</string>
+    <string name="todo">TODO</string>
+    <string name="back">back</string>
+    <string name="articless">article</string>
+    <string name="youtube">youtube</string>
+    <string name="backtotech">backtotech</string>
+    <string name="freedom_from_stammering_1_0">Freedom From Stammering \n1.0.0</string>
+    <string name="banner_guest">ca-app-pub-6570955792990742/6367265901</string>
+    <string name="banner_practice">ca-app-pub-6570955792990742/6964379319</string>
+    <string name="banner_exercise">ca-app-pub-6570955792990742/9010537278</string>
+    <string name="banner_speech_flows">ca-app-pub-6570955792990742/7314312227</string>
 </resources>

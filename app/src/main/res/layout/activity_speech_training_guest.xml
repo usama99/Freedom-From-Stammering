@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:background="@color/main_page"
     android:layout_height="match_parent"
-    tools:context="android.huts.usama.freefromstammering.Authentication.SpeechTrainingGuest">
+    tools:context="android.huts.usama.freefromstammering.calm.huts.usama.freefromstammering.Authentication.SpeechTrainingGuest">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO"
+                android:contentDescription="@string/mice"
                 tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
     </LinearLayout>
@@ -32,38 +33,50 @@
         android:id="@+id/txtSpeechInputguest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
         android:textColor="@color/main_page_button"
-        android:textSize="26dp"
-        android:textStyle="normal" />
+        android:textAppearance="?android:textAppearanceMedium"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="100dp"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:weightSum="5"
+        android:orientation="vertical">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btnSpeakguest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:background="@color/main_page"
-            android:src="@drawable/microphone"
+            android:src="@drawable/ic_mic_none_black_24dp"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
             android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
             android:text="@string/tap_on_mic"
             android:textColor="@color/main_page_button"
-            android:textSize="15dp"
-            android:textStyle="normal" />
+            android:textAppearance="?android:textAppearanceMedium"/>
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_guest">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

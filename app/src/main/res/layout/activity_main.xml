@@ -6,19 +6,22 @@
     android:background="@color/main_page"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="6.7"
     tools:context=".MainActivity">
 
     <ImageView
+        android:layout_weight="1"
         android:id="@+id/logo"
         android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:src="@drawable/logo" />
 
     <TextView
+        android:layout_weight="0.5"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="true"
@@ -32,7 +35,8 @@
         android:id="@+id/gif"
         android:background="@drawable/main_image"
         android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:scaleType="fitXY"
@@ -41,41 +45,44 @@
 
     <Button
         android:id="@+id/signUp"
+        android:layout_weight="0.6"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:text="@string/sign_up"
         android:textStyle="normal"
         android:elevation="3dp"
         android:textColor="@color/main_page"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:textAppearance="?android:textAppearanceSmall"
         android:layout_marginTop="30dp"
         android:background="@drawable/front_button_shape"
         android:layout_gravity="center_horizontal"/>
 
     <Button
+        android:layout_weight="0.6"
         android:id="@+id/alreayAccount"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:text="@string/i_already_have_an_acciunt"
         android:textStyle="normal"
         android:textColor="@color/main_page"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:textAppearance="?android:textAppearanceSmall"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/front_button_shape"
         android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/guest"
+        android:layout_weight="0.6"
         android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_height="0dp"
         android:text="@string/login_as_guest"
         android:textStyle="normal"
         android:textColor="@color/main_page_button"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:textAppearance="?android:textAppearanceSmall"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/front_button_shap2"
         android:layout_gravity="center_horizontal"/>
 

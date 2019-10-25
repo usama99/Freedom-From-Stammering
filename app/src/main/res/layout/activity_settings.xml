@@ -22,11 +22,11 @@
             android:layout_margin="20dp">
 
             <ImageView
+                android:background="@drawable/rippleit"
                 android:id="@+id/backmain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -39,10 +39,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:fontFamily="monospace"
+                android:fontFamily="sans-serif"
                 android:text="@string/settings"
                 android:textColor="@color/main_page_button"
-                android:textSize="22sp"
+                android:textAppearance="?android:textAppearanceMedium"
                 android:textStyle="normal" />
         </LinearLayout>
 
@@ -58,17 +58,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="10dp"
                 android:background="@drawable/rippleits"
                 android:src="@drawable/logout" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/help"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:elevation="3dp"
         android:orientation="horizontal"
         tools:targetApi="lollipop">
 
@@ -82,45 +81,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:fontFamily="monospace"
+            android:fontFamily="sans-serif"
             android:layout_gravity="center"
             android:text="@string/help"
+            android:background="@drawable/rippleits"
             android:textColor="@color/main_page_button"
-            android:textSize="22sp"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="normal" />
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/rateapp"
-        android:elevation="3dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_star_border_black_24dp"
-            tools:ignore="VectorDrawableCompat" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:fontFamily="monospace"
-            android:layout_gravity="center"
-            android:text="@string/rateit"
-            android:textColor="@color/main_page_button"
-            android:textSize="22sp"
-            android:textStyle="normal" />
-    </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/shareapp"
-        android:elevation="3dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="horizontal">
@@ -135,17 +107,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:fontFamily="monospace"
+            android:fontFamily="sans-serif"
             android:layout_gravity="center"
             android:text="@string/shareapp"
             android:textColor="@color/main_page_button"
-            android:textSize="22sp"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="normal" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/aboutus"
-        android:elevation="3dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -161,11 +132,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:fontFamily="monospace"
+            android:fontFamily="sans-serif"
             android:layout_gravity="center"
             android:text="@string/about_us"
             android:textColor="@color/main_page_button"
-            android:textSize="22sp"
+            android:textAppearance="?android:textAppearanceMedium"
             android:textStyle="normal" />
     </LinearLayout>
 

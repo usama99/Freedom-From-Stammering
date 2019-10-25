@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_marginStart="15dp"
@@ -10,7 +11,9 @@
     android:elevation="3dp"
     android:focusable="true"
     android:clickable="true"
-    android:background="@drawable/main_page_items">
+    android:padding="15dp"
+    android:background="@drawable/main_page_items"
+    tools:targetApi="lollipop">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,38 +23,38 @@
             android:id="@+id/source"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:textColor="@color/main_page_button"
-            android:gravity="left"
-            android:textStyle="normal"
-            android:textSize="18sp"
-            android:fontFamily="monospace"
+            android:gravity="start"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:fontFamily="sans-serif"
             android:text="@string/sample1"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:weightSum="2"
         android:orientation="horizontal">
         <TextView
+            android:layout_weight="1.7"
             android:id="@+id/titleMain"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="2dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:textColor="@color/main_page_button"
-            android:textStyle="normal"
-            android:textSize="18sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:fontFamily="sans-serif"
             android:text="@string/sample2"/>
         <TextView
+            android:layout_weight="0.3"
             android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/main_page_button"
             android:singleLine="true"
+            android:layout_gravity="center_vertical"
             android:layout_marginStart="150dp"
-            android:textStyle="normal"
-            android:textSize="18sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:fontFamily="sans-serif"
             android:text="@string/time"/>
     </LinearLayout>
     <LinearLayout
@@ -63,10 +66,10 @@
             android:layout_height="wrap_content"
             android:textColor="@color/main_page_button"
             android:singleLine="true"
-            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
             android:textStyle="normal"
-            android:textSize="18sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:itemTextAppearance"
+            android:fontFamily="sans-serif"
             android:text="@string/read_more"/>
     </LinearLayout>
 </LinearLayout>

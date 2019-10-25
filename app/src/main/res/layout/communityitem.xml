@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="90dp"
@@ -10,32 +11,33 @@
     android:elevation="3dp"
     android:focusable="true"
     android:clickable="true"
-    android:background="@drawable/main_page_items">
+    android:background="@drawable/main_page_items"
+    tools:targetApi="lollipop">
 
     <LinearLayout
+        android:weightSum="2"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
         <TextView
+            android:layout_weight="1.7"
             android:id="@+id/communi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:padding="10dp"
+            android:layout_height="match_parent"
             android:textColor="@color/main_page_button"
             android:gravity="center_vertical"
-            android:textStyle="normal"
-            android:layout_margin="10dp"
-            android:textSize="22sp"
-            android:fontFamily="monospace"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
             android:text="@string/communities"/>
         <ImageView
+            android:layout_weight="0.3"
             android:id="@+id/communiicon"
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="100dp"
-            android:src="@drawable/group"
-            android:contentDescription="TODO" />
+            android:src="@drawable/group"/>
 
     </LinearLayout>
 </LinearLayout>
