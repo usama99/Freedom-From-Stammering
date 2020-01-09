@@ -116,6 +116,31 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/rateit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star_border_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:text="@string/rate"
+            android:textColor="@color/main_page_button"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/aboutus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -105,4 +105,6 @@
     <string name="banner_practice">ca-app-pub-6570955792990742/6964379319</string>
     <string name="banner_exercise">ca-app-pub-6570955792990742/9010537278</string>
     <string name="banner_speech_flows">ca-app-pub-6570955792990742/7314312227</string>
+    <string name="backside">backside</string>
+    <string name="rate">Rate our app</string>
 </resources>

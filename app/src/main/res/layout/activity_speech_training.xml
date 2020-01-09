@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/main_page"
     android:layout_height="match_parent"
-    tools:context="android.huts.usama.freefromstammering.calm.huts.usama.freefromstammering.MainMenue.ExerciseSection.SpeechTrainingSection.SpeechTraining">
+    tools:context=".MainMenue.ExerciseSection.SpeechTrainingSection.SpeechTraining">
 
     <LinearLayout
         android:layout_width="match_parent"

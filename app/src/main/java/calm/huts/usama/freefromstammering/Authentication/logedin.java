@@ -28,13 +28,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+import java.util.Objects;
+
 public class logedin extends AppCompatActivity {
 
     GoogleSignInClient mGoogleSignInClient;
     FirebaseAuth mAuth;
     ImageView back;
     EditText emisignin, passlogin;
-    Button login, loginGoogle;
+    Button login;
     TextView forget;
     ProgressDialog progressDialoglogin;
     SharedPreferences sp;
@@ -45,7 +47,7 @@ public class logedin extends AppCompatActivity {
         setContentView(R.layout.activity_logedin);
         mAuth = FirebaseAuth.getInstance();
 
-        loginGoogle = findViewById(R.id.signingoogle);
+//        loginGoogle = findViewById(R.id.signingoogle);
         forget = findViewById(R.id.forgetpass);
         emisignin = findViewById(R.id.emaillogin);
         passlogin = findViewById(R.id.passwordlogin);
@@ -87,13 +89,13 @@ public class logedin extends AppCompatActivity {
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        loginGoogle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-                startActivityForResult(signInIntent, 101);
-            }
-        });
+//        loginGoogle.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+//                startActivityForResult(signInIntent, 101);
+//            }
+//        });
     }
 
     @Override
@@ -106,8 +108,9 @@ public class logedin extends AppCompatActivity {
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account);
+                firebaseAuthWithGoogle(Objects.requireNonNull(account));
             } catch (ApiException e) {
+                Toast.makeText(this, "Login error, try again", Toast.LENGTH_SHORT).show();
             }
         }
     }

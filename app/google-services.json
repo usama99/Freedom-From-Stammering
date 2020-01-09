@@ -8,14 +8,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:208524790130:android:fe029c3515798eb9",
+        "mobilesdk_app_id": "1:208524790130:android:57f0073deb9c642b42f5eb",
         "android_client_info": {
           "package_name": "calm.huts.usama.freefromstammering"
         }
       },
       "oauth_client": [
         {
-          "client_id": "208524790130-b1qnmv7vmubdj13cdmfpkegcp7pngikr.apps.googleusercontent.com",
+          "client_id": "208524790130-18igl7fde53n4mj67a7tb34iadls1r25.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "calm.huts.usama.freefromstammering",

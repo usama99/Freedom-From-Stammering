@@ -1,10 +1,16 @@
 package calm.huts.usama.freefromstammering.MainMenue.Setting;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import calm.huts.usama.freefromstammering.Authentication.logedin;
+import calm.huts.usama.freefromstammering.BuildConfig;
 import calm.huts.usama.freefromstammering.R;
+
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -28,6 +34,7 @@ public class Settings extends AppCompatActivity {
         help = findViewById(R.id.help);
         back = findViewById(R.id.backmain);
         share = findViewById(R.id.shareapp);
+        rate = findViewById(R.id.rateit);
         about = findViewById(R.id.aboutus);
         logout = findViewById(R.id.logoutfromapp);
         help.setOnClickListener(new View.OnClickListener() {
@@ -46,12 +53,30 @@ public class Settings extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentShare = new Intent();
-                intentShare.setAction(Intent.ACTION_SEND);
-                intentShare.putExtra(Intent.EXTRA_TEXT,
-                        "Hey check out my app at:");
-                intentShare.setType("text/plain");
-                startActivity(intentShare);
+                Intent intentInvite = new Intent(Intent.ACTION_SEND);
+                intentInvite.setType("text/plain");
+                String body = "https://play.google.com/store/apps/details?id=calm.huts.usama.freefromstammering";
+                intentInvite.putExtra(Intent.EXTRA_TEXT, "Let me recommend you this app\n" + body);
+                startActivity(Intent.createChooser(intentInvite, "Share using"));
+            }
+        });
+        rate.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("market://details?id=" + getApplication().getPackageName());
+                Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                // To count with Play market backstack, After pressing back button,
+                // to taken back to our application, we need to add following flags to intent.
+                goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                        Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                        Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                try {
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://play.google.com/store/apps/details?id=" + getApplication().getPackageName())));
+                }
             }
         });
         about.setOnClickListener(new View.OnClickListener() {

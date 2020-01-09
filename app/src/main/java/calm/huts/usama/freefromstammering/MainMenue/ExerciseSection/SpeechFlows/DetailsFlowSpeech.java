@@ -37,7 +37,7 @@ public class DetailsFlowSpeech extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        progressDialog = ProgressDialog.show(this, "Please wait", "Processing...", true);
+        progressDialog = ProgressDialog.show(this, "Please wait", "Opening...", true);
         CountDownTimer countDownTimer = new CountDownTimer(6000, 1000) {
             @Override
             public void onTick(long l) {

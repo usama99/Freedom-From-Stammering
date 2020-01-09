@@ -40,7 +40,7 @@ public class MeditationArctileLinks extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        progressDialogMed = ProgressDialog.show(this, "Please wait", "Processing...", true);
+        progressDialogMed = ProgressDialog.show(this, "Please wait", "Opening...", true);
         CountDownTimer countDownTimer = new CountDownTimer(8000, 1000) {
             @Override
             public void onTick(long l) {

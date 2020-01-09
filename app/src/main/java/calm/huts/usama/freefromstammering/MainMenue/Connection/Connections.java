@@ -98,7 +98,7 @@ public class Connections extends AppCompatActivity implements View.OnClickListen
             case R.id.fab4:
 
                 Intent pinterestIntent = new Intent(Connections.this, PinterestDetails.class);
-                pinterestIntent.putExtra("pinterest", "https://www.pinterest.com/stutteringfdn/");
+                pinterestIntent.putExtra("pinterest", "http://bit.ly/Join-SHB-Slack-Community-Support-Platform");
                 startActivity(pinterestIntent);
                 break;
         }

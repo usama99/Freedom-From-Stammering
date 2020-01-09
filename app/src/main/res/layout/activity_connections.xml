@@ -13,7 +13,8 @@
         android:weightSum="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
 
         <LinearLayout
             android:layout_weight="0.45"
@@ -122,7 +123,7 @@
         android:layout_marginBottom="10dp"
         app:pressedTranslationZ="12dp"
         app:rippleColor="@color/main_page_button"
-        android:src="@drawable/pinterest"/>
+        android:src="@drawable/s"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab3"
         android:layout_marginEnd="20dp"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.huts.usama.freefromstammering.calm.huts.usama.freefromstammering.Authentication.signup">
+    android:background="@color/main_page"
+    tools:context=".Authentication.signup">
 
     <LinearLayout
         android:layout_width="match_parent"

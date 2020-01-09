@@ -23,8 +23,7 @@
                 android:id="@+id/backtotwittergroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/sky_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/sky_24dp"/>
         </LinearLayout>
     </LinearLayout>
 

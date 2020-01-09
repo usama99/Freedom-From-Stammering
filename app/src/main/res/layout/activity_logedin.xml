@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".logedin">
+    android:background="@color/main_page"
+    tools:context=".login">
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_weight="1.6"
@@ -29,7 +31,8 @@
                 android:clickable="true"
                 android:background="@drawable/rippleit"
                 app:srcCompat="@drawable/ic_arrow_back_blue_24dp"
-                android:focusable="true" />
+                android:focusable="true"
+                android:contentDescription="@string/backside" />
 
         </LinearLayout>
         <LinearLayout
@@ -113,7 +116,7 @@
             android:outlineAmbientShadowColor="@color/main_page_button"
             android:textColorHint="@color/main_page"
             android:inputType="textPassword"
-            android:fontFamily="sans-serif"
+            android:fontFamily="monospace"
             android:textAppearance="?android:textAppearanceSmall"
             android:hint="@string/password_5_characters"
             tools:ignore="UnusedAttribute" />
@@ -126,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:textColor="@color/main_page_button"
-        android:fontFamily="sans-serif"
+        android:fontFamily="monospace"
         android:background="@drawable/rippleit"
         android:text="@string/forget_password"
         android:layout_marginStart="35dp"
@@ -141,35 +144,36 @@
         android:elevation="3dp"
         android:textStyle="normal"
         android:textColor="@color/background"
-        android:fontFamily="sans-serif"
+        android:fontFamily="monospace"
         android:textAppearance="?android:textAppearanceSmall"
         android:layout_marginTop="50dp"
         android:background="@drawable/front_button_shape"
         android:layout_gravity="center_horizontal"/>
 
-    <TextView
-        android:id="@+id/or"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="sans-serif"
-        android:textColor="@color/main_page_button"
-        android:text="@string/or"
-        android:layout_marginTop="10dp"
-        android:textSize="12sp"
-        android:textStyle="normal" />
-    <Button
-        android:id="@+id/signingoogle"
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:elevation="3dp"
-        android:text="@string/log_in_with_google"
-        android:textAllCaps="true"
-        android:textStyle="normal"
-        android:textColor="@color/background"
-        android:fontFamily="sans-serif"
-        android:textAppearance="?android:textAppearanceSmall"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/login_google"
-        android:layout_gravity="center_horizontal"/>
+<!--    <TextView-->
+<!--        android:id="@+id/or"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:textColor="@color/main_page_button"-->
+<!--        android:text="@string/or"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textStyle="normal" />-->
+<!--    <Button-->
+<!--        android:id="@+id/signingoogle"-->
+<!--        android:layout_width="280dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:elevation="3dp"-->
+<!--        android:text="@string/log_in_with_google"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textStyle="normal"-->
+<!--        android:textColor="@color/background"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:textAppearance="?android:textAppearanceSmall"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/login_google"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        tools:targetApi="lollipop" />-->
 </LinearLayout>

@@ -22,8 +22,7 @@
                 android:id="@+id/backtotwittericon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back_blue_24dp"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/ic_arrow_back_blue_24dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
