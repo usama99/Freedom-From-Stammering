@@ -23,7 +23,7 @@ import com.google.firebase.auth.SignInMethodQueryResult;
 public class signup extends AppCompatActivity {
 
     ImageView backToMain;
-    EditText username, email, password;
+    EditText email, password;
     ProgressDialog progressDialog;
     Button signup;
     //defining firebaseauth object
@@ -41,7 +41,7 @@ public class signup extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         backToMain = findViewById(R.id.backtomain);
-        username = findViewById(R.id.usi);
+//        username = findViewById(R.id.usi);
         email = findViewById(R.id.emi);
         password = findViewById(R.id.pass);
 
@@ -55,13 +55,13 @@ public class signup extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String usernames = username.getText().toString().trim();
+//                String usernames = username.getText().toString().trim();
                 String emails = email.getText().toString().trim();
                 String passwords = password.getText().toString();
-                if (usernames.equalsIgnoreCase("")){
-                    username.setError("Please enter username");
-                }
-                else if (emails.equalsIgnoreCase("")){
+//                if (usernames.equalsIgnoreCase("")){
+//                    username.setError("Please enter username");
+//                }
+                if (emails.equalsIgnoreCase("")){
                     email.setError("Please enter email");
                 }
                 else if (passwords.equalsIgnoreCase("")){
@@ -70,7 +70,7 @@ public class signup extends AppCompatActivity {
                 else{
                     progressDialog.setMessage("Registration Please Wait...");
                     progressDialog.show();
-                    username.setText("");
+//                    username.setText("");
                     email.setText("");
                     password.setText("");
                     performLoginOrAccountCreation(emails, passwords);
